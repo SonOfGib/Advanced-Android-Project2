@@ -222,6 +222,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        lm.removeUpdates(ll);
     }
 
     /**
